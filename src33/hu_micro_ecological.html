@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <title>常易康检测报告</title>
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c_reset.css">
+    <link rel="stylesheet" href="css/hu_micro_ecological.css">
+</head>
+<body ontouchstart>
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+    </div>
+</div>
+<!--loading层-->
+<div class="weui-loadmore" style="z-index:100;position: fixed;left: 30%;top:30%;height: 100px;line-height: 100px;width: 40%;background: rgba(0,0,0,0.6);color: #fff;">
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<!--主要内容-->
+   <main>
+       <!--点击按钮-->
+       <a href="#cd-nav" class="cd-nav-trigger">
+           <span class="cd-nav-icon"></span>
+       </a>
+       <!--hu__内容区-->
+       <!--胡琴  留的空白-->
+       <div class="micro_space"></div>
+       <!--huqin_正文主要的部分-->
+       <div class="microText">
+         <p>
+             根据检测结果，您肠道多种益生菌含量处于正常范围，但仍有三种益生菌
+             含量偏低。您肠道有一种条件致病菌含量偏高。请及时补充双歧杆菌、优杆菌属、
+             丁酸弧菌属、乳杆菌属。
+         </p>
+         <div class="microContainer">
+               <div class="accordion" id="accordion2">
+                   <!--折叠的第一行-->
+                   <div class="accordion-group">
+                       <!--折叠的标题 里面有标题、进度条、满意度-->
+                       <div class="accordion-heading micro_head" style="">
+                           <!--标题-->
+                           <a class="collapse_micro_a">
+                               有益菌
+                           </a>
+                       </div>
+                       <!--wan-->
+                       <!--折叠的内容（隐藏的正文）-->
+                       <div id="collapse2" class="accordion-body collapse in">
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>丁酸弧菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>乳酸菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>保加利亚乳酸杆菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner micro_hide">
+                               <h2>保加利亚乳酸杆菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                       </div>
+                       <!--wan-->
+
+                       <!--折叠向下的箭头-->
+                       <a class="microHideContent glyphicon glyphicon-chevron-down accordion-toggle"></a>
+                       <!--wan-->
+
+                   </div>
+               </div>
+         </div>
+         <div class="microContainer">
+               <div class="accordion" id="accordion3">
+                   <!--折叠的第一行-->
+                   <div class="accordion-group">
+                       <!--折叠的标题 里面有标题、进度条、满意度-->
+                       <div class="accordion-heading micro_head" style="">
+                           <!--标题-->
+                           <a class="collapse_micro_a">
+                               有益菌
+                           </a>
+                       </div>
+                       <!--wan-->
+                       <!--折叠的内容（隐藏的正文）-->
+                       <div id="collapse3" class="accordion-body collapse in">
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>丁酸弧菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>乳酸菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <h2>保加利亚乳酸杆菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner micro_hide">
+                               <h2>保加利亚乳酸杆菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner micro_hide">
+                               <h2>保加利亚乳酸杆菌:</h2>
+                               <p class="micro_word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                           </div>
+                       </div>
+                       <!--wan-->
+
+                       <!--折叠向下的箭头-->
+                       <a class="microHideContent glyphicon glyphicon-chevron-down accordion-toggle"></a>
+                       <!--wan-->
+
+                   </div>
+               </div>
+           </div>
+         <div class="microContainer">
+               <div class="accordion" id="accordion4">
+                   <!--折叠的第一行-->
+                   <div class="accordion-group">
+                       <!--折叠的标题 里面有标题、进度条、满意度-->
+                       <div class="accordion-heading micro_head" style="">
+                           <!--标题-->
+                           <a class="collapse_micro_a">
+                               益生元
+                           </a>
+                       </div>
+                       <!--wan-->
+                       <!--折叠的内容（隐藏的正文）-->
+                       <div id="collapse4" class="accordion-body collapse in">
+                           <div class="accordion-inner micro_acc_inner">
+                               <p class="pics"></p>
+                               <div class="micro_word">
+                                   <h2>低聚半乳糖:</h2>
+                                   <p class="word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                               </div>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <p class="pics"></p>
+                               <div class="micro_word">
+                                   <h2>低聚半乳糖:</h2>
+                                   <p class="word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                               </div>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner">
+                               <p class="pics"></p>
+                               <div class="micro_word">
+                                   <h2>低聚半乳糖:</h2>
+                                   <p class="word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                               </div>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner micro_hide">
+                               <p class="pics"></p>
+                               <div class="micro_word">
+                                   <h2>低聚半乳糖:</h2>
+                                   <p class="word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                               </div>
+                           </div>
+                           <div class="accordion-inner micro_acc_inner micro_hide">
+                               <p class="pics"></p>
+                               <div class="micro_word">
+                                   <h2>低聚半乳糖:</h2>
+                                   <p class="word">有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降</p>
+                               </div>
+                           </div>
+                       </div>
+                       <!--wan-->
+
+                       <!--折叠向下的箭头-->
+                       <a class="microHideContent glyphicon glyphicon-chevron-down accordion-toggle"></a>
+                       <!--wan-->
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </main>
+</body>
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="lib/common.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+<script language="javascript" src="js/hu_micro_ecological.js"></script>
+</html>

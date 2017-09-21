@@ -1,0 +1,89 @@
+/*有益有害菌的界面*/
+.space{
+    background-color: #f8b62c;
+    height:260px;
+}
+.bodyContainer{
+    width: 100%;
+    margin: 10px auto;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px 1px #e6e6e6;
+}
+.a_head{
+    display: flex;
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    height:50px;
+    line-height: 33px;
+}
+.collapse_a{
+   text-align: left;
+    color: black;
+    flex:0 0 85px;
+    width: 85px;
+}
+.isSatisfy{
+    flex: 0 0 60px;
+    width: 60px;
+    float:right;
+    text-align: right;
+    color: black;
+}
+.hideContent{
+    display: inline-block;
+    width: 100%;
+    color: rgba(7,17,27,0.2);
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.w_process{
+    flex:1;
+}
+.j_process{
+    background-color: #f8b62c;
+    border-radius: 5px;
+}
+.w_process_bar{
+    height: 6px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+.acc_inner{
+    padding: 14px 10px;
+    margin:0 10px;
+    border-bottom: 1px dotted #bbb;
+    color:#333;
+}
+
+/*正文主要部分的css*/
+.bodyText{
+    width: 100%;
+    padding: 20px 18px;
+    margin: 0 auto;
+    background-color: #f9f5f5;
+}
+.probiotics{
+
+}
+.p_content_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color:#333
+}
+.p_content_text{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin: 10px 0 20px;
+}
+/*有害菌部分*/
+.harmful{
+    margin: 20px 0;
+}
+
+/*3D*/
+.highcharts-button{
+    display: none;
+}

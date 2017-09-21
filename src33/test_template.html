@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c_reset.css">
+    <link rel="stylesheet" href="css/hu_hamful.css">
+
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script language="javascript" src="js/hu_hamful.js"></script>
+    <script type="text/javascript" src='js/template-native.js'></script>
+    <script type="text/template" id = "templ01">
+        <ul>
+            <%for(var i = 0; i < items.probiotics.size; i++) {%>
+            <div class="bodyContainer">
+                <div class="accordion" id="accordion<%=i%>">
+                    <!--折叠的第一行-->
+                    <div class="accordion-group">
+                        <!--折叠的标题 里面有标题、进度条、满意度-->
+                        <div class="accordion-heading a_head" >
+                            <!--标题-->
+                            <a class="collapse_a" >
+                                <%=items.probiotics.arr[i].name%>
+                            </a>
+                            <!--进度条-->
+                            <div class="weui-progress w_process">
+                                <div class="weui-progress__bar w_process_bar">
+                                    <div class="weui-progress__inner-bar js_progress j_process" style="width: 50%;height: 100%" ></div>
+                                </div>
+                            </div>
+                            <!--满意度-->
+                            <p class="isSatisfy">需要注意</p>
+                        </div>
+                        <!--wan-->
+                        <!--折叠的内容（隐藏的正文）-->
+                        <div id="collapse<%=i%>" class="accordion-body collapse">
+                            <div class="accordion-inner acc_inner">
+                                有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降
+                            </div>
+                        </div>
+                        <!--wan-->
+
+                        <!--折叠向下的箭头-->
+                        <a class="hideContent glyphicon glyphicon-chevron-down accordion-toggle" data-toggle="collapse"
+                           data-parent="#accordion2" href="#collapse<%=i%>">
+                        </a>
+                        <!--wan-->
+
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </ul>
+    </script>
+    <script>
+        window.onload = function () {
+            $.ajax({
+                url: "test.php",
+                type:"get",
+                dataType: "json",
+                success: function (data) {
+                    var jsArr = data;
+
+                    var obj = {
+                        items: jsArr
+                    }
+                    //console.log(obj.items);
+                    var size = 0;
+                    var arr = [];
+                    for(var key in obj.items.probiotics){
+                        if (obj.items.probiotics.hasOwnProperty(key)) size++;
+                        arr.push(obj.items.probiotics[key]);
+                    }
+
+                    obj.items.probiotics.size = size;
+                    obj.items.probiotics.arr = arr;
+
+                   console.log(obj.items.probiotics.arr);
+                    var resultStr = template("templ01",obj);
+                    //console.log(resultStr);
+                    $("#container").append(resultStr);
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<!--<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>-->
+
+
+</html>

@@ -1,0 +1,73 @@
+/*慢性疾病发现*/
+.disease_space{
+    background-color: #b1cafa;
+    height:260px;
+}
+.mainText{
+    width: 100%;
+    padding: 20px 18px;
+    margin: 0 auto;
+    background-color: #f9f5f5;
+}
+.highcharts-button{
+    display: none;
+}
+.disease_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color:#333
+}
+.disease_text{
+    text-align: justify;
+    margin: 10px 0 20px;
+    color:#333;
+}
+.h_chart{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #e6e6e6;
+}
+.highcharts-credits{
+    display: none;
+}
+.disease_develop_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color:#333;
+    margin:20px 0 10px;
+}
+.disease_develop_text{
+    text-align: justify;
+    color:#333;
+}
+.A_disease_dev{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #e6e6e6;
+    margin:20px 0;
+}
+.A_title{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.imgWrapper{
+    width: 100%;
+    height:auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+.imgWrapper img{
+    width: 90%;
+    height:90%;
+    padding:16px 0;
+}
+.A_content{
+    padding:14px 0px;
+    margin: 0px 20px;
+    color:#333;
+    text-align: justify;
+    border-top:1px dotted #bbb;
+}

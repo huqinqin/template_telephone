@@ -1,0 +1,47 @@
+{
+  "probiotics": {
+    "shuang": {
+      "name": "双歧杆菌",
+      "attentionType": "需要注意",
+      "maxValue": "100",
+      "minValue": "0",
+      "personScore": "20",
+      "content":"有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降"
+},
+    "you": {
+      "name": "丁酸弧菌属",
+      "attentionType": "满意",
+      "maxValue": "100",
+      "minValue": "0",
+      "personScore": "20",
+      "content":"有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降"
+  },
+    "ding": {
+      "name": "益生菌",
+      "attentionType": "需要注意",
+      "maxValue": "100",
+      "minValue": "0",
+      "personScore": "20",
+      "content":"有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降"
+  }
+
+  },
+  "harmful":  {
+    "shuang": {
+      "name": "双歧杆菌1",
+      "attentionType": "需要注意",
+      "maxValue": "100",
+      "minValue": "0",
+      "personScore": "20",
+      "content":"有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降"
+  },
+    "shuang": {
+      "name": "双歧杆菌2",
+      "attentionType": "需要注意",
+      "maxValue": "100",
+      "minValue": "0",
+      "personScore": "20",
+      "content":"有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降"
+    }
+  }
+}

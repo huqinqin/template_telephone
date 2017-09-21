@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <title>常易康检测报告</title>
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c_reset.css">
+    <link rel="stylesheet" href="css/hu_hamful.css">
+</head>
+<body ontouchstart>
+<!--弹出菜单内容-->
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+    </div>
+</div>
+<!--loading层-->
+<div class="weui-loadmore" style="z-index:100;position: fixed;left: 30%;top:30%;height: 100px;line-height: 100px;width: 40%;background: rgba(0,0,0,0.6);color: #fff;">
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<!--主要内容-->
+<main>
+    <!--点击按钮-->
+    <a href="#cd-nav" class="cd-nav-trigger">
+        <span class="cd-nav-icon"></span>
+    </a>
+    <!--内容区-->
+
+    <!--胡琴  留的空白-->
+    <div class="space"></div>
+
+    <!--huqin_正文主要的部分-->
+    <div class="bodyText">
+        <!--益生菌部分-->
+       <div class="probiotics">
+           <!--标题-->
+           <h2 class="p_content_title">益生菌含量</h2>
+           <!--内容介绍-->
+           <p class="p_content_text">
+               在人体内有很多细菌，既有有益菌也有有害菌，共同组成体内的生态环境。
+               正常情况下，宝宝体内益生菌占优势，控制住坏菌处于健康状态，若生病、滥用药物等，
+               益生菌的优势地位就要受到威胁，导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降，
+               若肠道内有益菌数量不能及时恢复，有害菌就会乘机繁殖，使宝宝反复生病。
+               日常饮食中，益生菌很难得到有效补充，因此，及时给宝宝补充合生元益生菌(儿童型)，可以帮助提高抵抗力
+           </p>
+           <div class="container1"></div>
+       </div>
+        <!--有害菌部分-->
+        <div class="harmful">
+            <!--标题-->
+            <h2 class="p_content_title">益生菌含量</h2>
+            <!--内容介绍-->
+            <p class="p_content_text">
+                在人体内有很多细菌，既有有益菌也有有害菌，共同组成体内的生态环境。
+                正常情况下，宝宝体内益生菌占优势，控制住坏菌处于健康状态，若生病、滥用药物等，
+                益生菌的优势地位就要受到威胁，导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降，
+                若肠道内有益菌数量不能及时恢复，有害菌就会乘机繁殖，使宝宝反复生病。
+                日常饮食中，益生菌很难得到有效补充，因此，及时给宝宝补充合生元益生菌(儿童型)，可以帮助提高抵抗力
+            </p>
+            <div class="container2"></div>
+            <!--<div class="bodyContainer">
+                <div class="accordion" id="accordion11">
+                    &lt;!&ndash;折叠的第一行&ndash;&gt;
+                    <div class="accordion-group">
+                        &lt;!&ndash;折叠的标题 里面有标题、进度条、满意度&ndash;&gt;
+                        <div class="accordion-heading a_head" style="">
+                            &lt;!&ndash;标题&ndash;&gt;
+                            <a class="collapse_a">
+                                有害菌
+                            </a>
+                            &lt;!&ndash;进度条&ndash;&gt;
+                            <div class="weui-progress w_process">
+                                <div class="weui-progress__bar w_process_bar">
+                                    <div class="weui-progress__inner-bar js_progress j_process" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            &lt;!&ndash;满意度&ndash;&gt;
+                            <p class="isSatisfy">满意</p>
+                        </div>
+                        &lt;!&ndash;wan&ndash;&gt;
+                        &lt;!&ndash;折叠的内容（隐藏的正文）&ndash;&gt;
+                        <div id="collapse11" class="accordion-body collapse">
+                            <div class="accordion-inner acc_inner">
+                                有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降
+                            </div>
+                        </div>
+                        &lt;!&ndash;wan&ndash;&gt;
+
+                        &lt;!&ndash;折叠向下的箭头&ndash;&gt;
+                        <a class="hideContent glyphicon glyphicon-chevron-down accordion-toggle" data-toggle="collapse"
+                           data-parent="#accordion11" href="#collapse11">
+                        </a>
+                        &lt;!&ndash;wan&ndash;&gt;
+
+                    </div>
+                </div>
+            </div>
+            <div class="bodyContainer">
+                <div class="accordion" id="accordion12">
+                    &lt;!&ndash;折叠的第一行&ndash;&gt;
+                    <div class="accordion-group">
+                        &lt;!&ndash;折叠的标题 里面有标题、进度条、满意度&ndash;&gt;
+                        <div class="accordion-heading a_head" style="">
+                            &lt;!&ndash;标题&ndash;&gt;
+                            <a class="collapse_a">
+                                有害菌
+                            </a>
+                            &lt;!&ndash;进度条&ndash;&gt;
+                            <div class="weui-progress w_process">
+                                <div class="weui-progress__bar w_process_bar">
+                                    <div class="weui-progress__inner-bar js_progress j_process" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            &lt;!&ndash;满意度&ndash;&gt;
+                            <p class="isSatisfy">满意</p>
+                        </div>
+                        &lt;!&ndash;wan&ndash;&gt;
+                        &lt;!&ndash;折叠的内容（隐藏的正文）&ndash;&gt;
+                        <div id="collapse12" class="accordion-body collapse">
+                            <div class="accordion-inner acc_inner">
+                                有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降
+                            </div>
+                        </div>
+                        &lt;!&ndash;wan&ndash;&gt;
+
+                        &lt;!&ndash;折叠向下的箭头&ndash;&gt;
+                        <a class="hideContent glyphicon glyphicon-chevron-down accordion-toggle" data-toggle="collapse"
+                           data-parent="#accordion12" href="#collapse12">
+                        </a>
+                        &lt;!&ndash;wan&ndash;&gt;
+
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    </div>
+    <!--胡琴  collapse折叠菜单-->
+
+
+</main>
+</body>
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="lib/common.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+<script language="javascript" src="js/hu_hamful.js"></script>
+<script type="text/javascript" src="js/template-native.js"></script>
+<script type="text/template" id = "templ01">
+    <ul>
+       <%for(var i = 0; i < items.probiotics.size; i++) {%>
+        <div class="bodyContainer">
+            <div class="accordion" id="accordion<%=i%>">
+                <!--折叠的第一行-->
+                <div class="accordion-group">
+                    <!--折叠的标题 里面有标题、进度条、满意度-->
+                    <div class="accordion-heading a_head" >
+                        <!--标题-->
+                        <a class="collapse_a" >
+                            <%=items.probiotics.arr[i].name%>
+                        </a>
+                        <!--进度条-->
+                        <div class="weui-progress w_process">
+                            <div class="weui-progress__bar w_process_bar">
+                                <div class="weui-progress__inner-bar js_progress j_process" style="width: 50%;height: 100%" ></div>
+                            </div>
+                        </div>
+                        <!--满意度-->
+                        <p class="isSatisfy"><%=items.probiotics.arr[i].attentionType%></p>
+                    </div>
+                    <!--wan-->
+                    <!--折叠的内容（隐藏的正文）-->
+                    <div id="collapse<%=i%>" class="accordion-body collapse">
+                        <div class="accordion-inner acc_inner">
+                            有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降
+                        </div>
+                    </div>
+                    <!--wan-->
+
+                    <!--折叠向下的箭头-->
+                    <a class="hideContent glyphicon glyphicon-chevron-down accordion-toggle" data-toggle="collapse"
+                       data-parent="#accordion2" href="#collapse<%=i%>">
+                    </a>
+                    <!--wan-->
+
+                </div>
+            </div>
+        </div>
+      <%}%>
+    </ul>
+</script>
+<script type="text/template" id = "templ02">
+    <!--有害菌的渲染-->
+    <ul>
+    <%for(var i = 0; i < items.harmful.size2; i++) {%>
+    <div class="bodyContainer">
+            <div class="accordion" id="accordion<%=items.probiotics.size+i%>">
+            <!--折叠的第一行-->
+            <div class="accordion-group">
+            <!--折叠的标题 里面有标题、进度条、满意度-->
+            <div class="accordion-heading a_head" >
+            <!--标题-->
+            <a class="collapse_a" >
+        <%=items.harmful.arr2[i].name%>
+            </a>
+            <!--进度条-->
+            <div class="weui-progress w_process">
+            <div class="weui-progress__bar w_process_bar">
+            <div class="weui-progress__inner-bar js_progress j_process" style="width: 50%;height: 100%" ></div>
+            </div>
+            </div>
+            <!--满意度-->
+            <p class="isSatisfy"><%=items.harmful.arr2[i].attentionType%></p>
+            </div>
+            <!--wan-->
+            <!--折叠的内容（隐藏的正文）-->
+            <div id="collapse<%=items.probiotics.size+i%>" class="accordion-body collapse">
+            <div class="accordion-inner acc_inner">
+            有益有害菌是非常重要的菌群,导致食欲下降、消化吸收功能差、体弱消瘦、抵抗力下降
+        </div>
+        </div>
+        <!--wan-->
+
+        <!--折叠向下的箭头-->
+        <a class="hideContent glyphicon glyphicon-chevron-down accordion-toggle" data-toggle="collapse"
+        data-parent="#accordion2" href="#collapse<%=items.probiotics.size+i%>">
+            </a>
+            <!--wan-->
+
+            </div>
+            </div>
+            </div>
+            <%}%>
+    </ul>
+</script>
+<script>
+    window.onload = function () {
+        $.ajax({
+            url: "test.php",
+            type:"get",
+            dataType: "json",
+            success: function (data) {
+                var jsArr = data;
+
+                var obj = {
+                    items: jsArr
+                }
+                //console.log(obj.items);
+                var size = 0;
+                var size2 = 0;
+                var arr = [];
+                var arr2 = [];
+                for(var key in obj.items.probiotics){
+                    if (obj.items.probiotics.hasOwnProperty(key)) size++;
+                    arr.push(obj.items.probiotics[key]);
+                }
+
+                for(var key in obj.items.harmful){
+                    if (obj.items.harmful.hasOwnProperty(key)) size2++;
+                    arr2.push(obj.items.harmful[key]);
+                }
+               console.log(size2,arr2);
+
+
+
+                obj.items.probiotics.size = size;
+                obj.items.probiotics.arr = arr;
+
+                obj.items.harmful.size2 = size2;
+                obj.items.harmful.arr2 = arr2;
+
+                //console.log(obj.items.probiotics.arr);
+                var resultStr = template("templ01",obj);
+                var resultStr2 = template("templ02",obj);
+                //console.log(resultStr);
+                $(".container1").append(resultStr);
+                $(".container2").append(resultStr2);
+
+
+            }
+        })
+    }
+</script>
+
+</html>
